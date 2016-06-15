@@ -3,29 +3,30 @@ a{
 	/*font-size: 50px;*/
 }
 .width{
-	width: 100%;
+	width: 510px;
+	height: 335px;
 }
 #transition_content{
 	display: flex;
 	margin-top: 5%;
 }
-#aside{
-	flex: 15%;
-	text-align: center;
-}
-#aside>div>a{
-	width: 100px;
-	margin: 5px;
-}
 #main-part{
-	flex: 85%;
+	display: flex;
+	width:1280px;
+	flex-wrap:wrap;
 }
-#main-part>div>img{
-	width: 100%;
+#main-part img{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right:10px;
+	margin-left:10px;
 }
 footer>div{
 	background-color: grey;
 }
-footer>div>a{
+footer a{
 	color: white;
+	padding-left:100px;
+	padding-right:100px;
+	text-align: center;
 }
