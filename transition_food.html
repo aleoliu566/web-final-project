@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="transition.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
 </head>
+
 <body>
-<header>
-	<div class="title"><h1><a href="index.html">三峽老街（logo）</a></h1></div>
-	<div id="weather"><h2>天氣</h2></div>
-</header>
-<div id="transition_content">
-	<div id="aside">
-		<div><a class="btn btn-primary" href="transition_food.html" role="button">食</a></div>
-		<div><a class="btn btn-primary" href="transition_drink.html" role="button">飲</a></div>
-		<div><a class="btn btn-primary" href="transition_map.html" role="button">行</a></div>
-	</div>
-	<div id="main-part">
-		
-		<div class="card col-md-6">
-		  <a href="bread.html">
-		  <img class="width" src="img/bread.jpg" alt="Card image cap">
-		  </a>
-		  <div class="card-block">
-		    <p class="card-text">金牛角</p>
-		  </div>
-		</div>
-		
-		<div class="card col-md-6">
-		  <img class="width" src="img/pigblood.jpg" alt="Card image cap">
-		  <div class="card-block">
-		    <p class="card-text">米血糕</p>
-		  </div>
-		</div>
-		<div class="card col-md-6">
-		  <img class="width" src="img/chickenegg.jpg" alt="Card image cap">
-		  <div class="card-block">
-		    <p class="card-text">雞蛋糕</p>
-		  </div>
-		</div>
-		<div class="card col-md-6">
-		  <img class="width" src="img/flower.jpg" alt="Card image cap">
-		  <div class="card-block">
-		    <p class="card-text">豆花</p>
-		  </div>
-		</div>
-	</div>
-</div>
+    <header>
+<!--         <div class="title">
+            <h1><a href="index.html">三峽老街（logo）</a></h1></div>
+        <div id="weather">
+            <h2>天氣</h2></div> -->
 
-<footer>
-	<div>
-		<h3>相關連結</h3>
-		<a href="http://www.sanchiaoyung.com.tw/">三峽老街官網</a><br>
-		<a href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=65">新北市觀光旅遊網</a>
-	</div>
-	<h3>余能豪老師web課----期末專案</h3>
-</footer>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
+        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse ">
+        <div id="bar">
+          <div id="icon">
+          	<p>icon</p>
+          	<!-- <img src=""> -->
+          </div>
+		  <div class="nav navbar-nav">
+		    <a class="nav-item nav-link " href="index_v0.html">Home <span class="sr-only">(current)</span></a>
+		    <a class="nav-item nav-link active" href="">食物</a>
+		    <a class="nav-item nav-link" href="#">飲品</a>
+		    <a class="nav-item nav-link" href="transition_map.html">地圖</a>
+		  </div>
+		  </div>
+		</nav>
+    </header>
+        <!-- <div id="aside">
+            <div><a class="btn btn-primary" href="transition_food.html" role="button">食</a></div>
+            <div><a class="btn btn-primary" href="transition_drink.html" role="button">飲</a></div>
+            <div><a class="btn btn-primary" href="transition_map.html" role="button">行</a></div>
+        </div>
+ -->
+ 	<div id="three">
+ 		<h3>三峽老街</h3>
+ 		<!-- <img src="img/three.jpg"> -->
+ 	</div>
 
+
+ 	<div id="container">
+        <div id="main-part">
+            <ul>
+                <li>
+                    <div>
+                        <a href="bread.html">
+                            <img id="firstImg" src="img/bread.png" alt="金牛角">
+                        </a>
+                        <!-- <p>金牛角</p> -->
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="flower" class="width" src="img/flower.png" alt="Card image cap">
+                        <div>
+                            <!-- <p>米血糕</p> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="breadcream" src="img/breadicecream.png" alt="Card image cap">
+                        <div>
+                            <!-- <p>雞蛋糕</p> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="chickenegg" src="img/chickenegg.png" alt="Card image cap">
+                        <div>
+                            <!-- <p class="card-text">豆花</p> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="pigblood" src="img/pigblood.png" alt="Card image cap">
+                        <div>
+                            <!-- <p class="card-text">豆花</p> -->
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="" src="img/pigblood.png" alt="Card image cap">
+                        <div>
+                            <!-- <p class="card-text">豆花</p> -->
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div>
+            <h3>相關連結</h3>
+            <a href="http://www.sanchiaoyung.com.tw/">三峽老街官網</a>
+            <br>
+            <a href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=65">新北市觀光旅遊網</a>
+        </div>
+        <h3>Web programming 期末專案</h3>
+		<p>&copy; 2016 戴玉娟 蕭卉洳 陳敬淳 那玉昕 劉皪</p>
+    </footer>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
+    <script src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/transition_food.js"></script>
+    <!-- <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init(); //初始化
+    </script> -->
 </body>
+
 </html>

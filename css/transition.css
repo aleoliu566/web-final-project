@@ -1,0 +1,86 @@
+a{
+	text-decoration: none;
+	/*font-size: 50px;*/
+}
+#bar{
+	display: flex;
+}
+#icon{
+	width: 70%;
+}
+#three{
+	background-image:url('../img/three.jpg');
+	background-size: cover;
+	background-color: white;
+	height: 400px;
+	/*濾鏡*/
+	-webkit-filter:brightness(.5);
+	margin-bottom:3%; 
+}
+#three>h3{
+	text-align: center;
+	color: white;
+}
+#transition_content{
+	display: flex;
+	margin-top: 5%;
+}
+#main-part{
+	width: 80%;
+	/*height: 800px;*/
+	text-align: center;
+	margin: auto;
+}
+#main-part li{
+	list-style: none;
+}
+#main-part img{
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+	margin-right:10px;
+	margin-left:10px;
+	display: none;
+	width: 40%;
+}
+#main-part>ul>li:nth-child(odd){
+	/*float: left;*/
+	text-align: left;
+}
+#main-part>ul>li:nth-child(even){
+	text-align: right;
+}
+
+#main-part>ul>li:nth-child(odd){
+	/*margin-right:50%;*/
+}
+#main-part>ul>li:nth-child(even){
+	/*margin-left:50%;*/
+}
+footer{
+	/*display: ;*/
+}
+footer>div{
+	background-color: grey;
+}
+footer a{
+	color: white;
+	padding-left:100px;
+	padding-right:100px;
+	text-align: center;
+}
+
+/*各物介紹頁*/
+#button>button{
+	width: 100px;
+	border-radius:10px;
+	background-color: black;
+	color: white;
+	border: 0;
+	margin: 3%;
+}
+#button>button>p{
+	margin: 8px;
+}
+#store-map{
+	display: none
+}

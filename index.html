@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header>
 	<div class="title"><a href="index.html"><h1>三峽老街（logo）</h1></a></div>
 	<div id="weather"><h2>天氣</h2></div>
+	<div id=""></div>
 </header>
 <article>
 	<div id="content">
@@ -19,16 +20,39 @@
 </article>
 <article>
 	<div id="weatherpart">
-		<div id="todayweather">今日天氣</div>
+		<div id="todayweather">
+			<p>今日天氣</p>
+			<canvas id="todayicon" width="40" height="40"></canvas>
+		</div>
 		<div id="blank"></div>
-		<div id="weekofweather">本週天氣</div>
+		<div id="weekofweather">
+			<p>本週天氣</p>
+
+			<table>
+				<tr id=week>
+				</tr>
+				<tr id=temp>
+				</tr>
+				<tr id=icon>
+					<td><canvas id="firsticon" width="40" height="40"></canvas></td>
+					<td><canvas id="secondicon" width="40" height="40"></canvas></td>
+					<td><canvas id="thirdicon" width="40" height="40"></canvas></td>
+					<td><canvas id="forthicon" width="40" height="40"></canvas></td>
+					<td><canvas id="fifthicon" width="40" height="40"></canvas></td>
+				</tr>
+			</table>
+		</div>
+
 	</div>
 </article>
 
 
 <footer>
-	<h3>余能豪老師web課----期末專案</h3>
+	<h3>Web programming 期末專案</h3>
+	<p>&copy; 2016 戴玉娟 蕭卉洳 陳敬淳 那玉昕 劉皪</p>
 </footer>
-
+	<script src="jquery-3.0.0.min.js"></script>
+	<script src="http://darkskyapp.github.io/skycons/skycons.js"></script>
+	<script src="js/temperature.js" type="text/javascript"></script>
 </body>
 </html>
