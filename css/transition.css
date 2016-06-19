@@ -52,8 +52,9 @@ a{
 #main-part li{
 	list-style: none;
 	position: relative;
-	display: none;
+	/*display: none;*/
 	/*display: flex;*/
+	opacity:0;
 }
 #main-part img{
 	width: 80%;

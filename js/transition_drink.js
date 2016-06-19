@@ -1,18 +1,15 @@
 /************transition drink page ***************/ 
 
-$('#tea').fadeIn(1000);
+$('#tea').fadeTo(2000,1);
 $(window).scroll(function() {
-    // if ($(window).scrollTop() > 1) {
-    	// $('#firstImg').fadeIn(1000);
-    // }
     if($(window).scrollTop() > (200+h/3)){
-    	$('#tea').fadeIn(2000);
+    	$('#tea').fadeTo(2000,1);
     }
     if($(window).scrollTop() > 200+3*(h/3)){
-    	$('#milktea').fadeIn(2000);
+    	$('#milktea').fadeTo(2000,1);
     }
     if($(window).scrollTop() > 200+5*(h/3)){
-    	$('#flowertea').fadeIn(2000);
+    	$('#flowertea').fadeTo(2000,1);
     }
 });
 // $(document).ready(function() {

@@ -1,25 +1,27 @@
 /************transition food page ***************/ 
 
-$('#firstImg').fadeIn(1000);
+$('#firstImg').fadeTo(2000,1);
 $(window).scroll(function() {
     // if ($(window).scrollTop() > 1) {
     	// $('#firstImg').fadeIn(1000);
     // }
     if($(window).scrollTop() > (200+h/3)){
-    	$('#flower').fadeIn(2000);
+    	$('#flower').fadeTo(2000,1);
+
+    	// $('#flower').fadeIn(2000);
     }
     if($(window).scrollTop() > 200+3*(h/3)){
-    	$('#breadcream').fadeIn(2000);
+    	$('#breadcream').fadeTo(2000,1);
     }
     if($(window).scrollTop() > 200+5*(h/3)){
-    	$('#chickenegg').fadeIn(2000);
+    	$('#chickenegg').fadeTo(2000,1);
     }
     if($(window).scrollTop() > 200+7*h/3){
-    	$('#pigblood').fadeIn(2000);
+    	$('#pigblood').fadeTo(2000,1);
 	}
     // $('#chickenegg').fadeIn(1000);
     if($(window).scrollTop() > 200+9*h/3){
-    	$('#myyasu').fadeIn(2000);
+    	$('#myyasu').fadeTo(2000,1);
     }	
 });
 // $(document).ready(function() {
