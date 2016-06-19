@@ -1,7 +1,4 @@
-// $("#logo").click(function(){
-	// $("#menu").hide();
-	// $("#bg-picture").slideToggle("slow");
-// });
+/*************首頁***************/ 
 
 var window_w = $(window).width();  
 var window_h = $(window).height();

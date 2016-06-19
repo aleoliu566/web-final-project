@@ -2,60 +2,85 @@ a{
 	text-decoration: none;
 	/*font-size: 50px;*/
 }
+/*********bar********/
 #bar{
 	display: flex;
 }
 #icon{
 	width: 70%;
 }
+
+
 #three{
-	background-image:url('../img/three.jpg');
+	background-image:url('../img/tran.jpg');
 	background-size: cover;
 	background-color: white;
-	height: 400px;
-	/*濾鏡*/
-	-webkit-filter:brightness(.5);
-	margin-bottom:3%; 
+	position: relative;
+	text-align: center; 
 }
 #three>h3{
-	text-align: center;
+	
 	color: white;
+	padding-top:10%;
+	/*margin-bottom: 190px;*/
 }
+#three>img{
+	position: relative;
+	/*left:;*/
+	/*margin: auto;*/
+	bottom: 0px;
+}
+
+.word{
+	margin: 5% 5% 5% 5%;
+	text-align: center;
+	font-family: 漢儀長美黑;
+}
+
+
+
 #transition_content{
 	display: flex;
 	margin-top: 5%;
 }
 #main-part{
-	width: 80%;
+	width: 70%;
 	/*height: 800px;*/
 	text-align: center;
 	margin: auto;
 }
 #main-part li{
 	list-style: none;
+	position: relative;
+	display: none;
+	/*display: flex;*/
 }
 #main-part img{
-	/*display: flex;*/
-	/*flex-wrap: wrap;*/
-	margin-right:10px;
-	margin-left:10px;
-	display: none;
-	width: 40%;
+	width: 80%;
 }
 #main-part>ul>li:nth-child(odd){
 	/*float: left;*/
-	text-align: left;
+	/*text-align: left;*/
 }
 #main-part>ul>li:nth-child(even){
-	text-align: right;
+	/*text-align: right;*/
+}
+#main-part>ul{
+	padding: 0px;
+}
+#main-part>ul>li>div{
+	display: flex;
+}
+#main-part>ul>li>div>a{
+	flex: 1;
+}
+#main-part>ul>li>div>h5{
+	flex: 1;
+	margin-top:15%; 
 }
 
-#main-part>ul>li:nth-child(odd){
-	/*margin-right:50%;*/
-}
-#main-part>ul>li:nth-child(even){
-	/*margin-left:50%;*/
-}
+
+
 footer{
 	/*display: ;*/
 }

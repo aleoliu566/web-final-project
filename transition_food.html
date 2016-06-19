@@ -10,103 +10,92 @@
 </head>
 
 <body>
+    <div id="three">
+        <h3 class="display-3">三峽老街</h3>
+        <!-- <img src="img/three.jpg"> -->
+        <!-- <img src="img/icon.jpg"> -->
+        <svg width="200" height="200">
+            <circle cx="100" cy="50" r="25" stroke="white" stroke-width="2" fill="transparent" />
+            <circle cx="100" cy="50" r="8" fill="white" />
+            <path d="M 100 75 L 100 230" stroke-width="3" stroke="white" fill="white">
+        </svg>
+    </div>
+
     <header>
-<!--         <div class="title">
-            <h1><a href="index.html">三峽老街（logo）</a></h1></div>
-        <div id="weather">
-            <h2>天氣</h2></div> -->
-
-        <nav class="navbar navbar-fixed-top navbar-dark bg-inverse ">
-        <div id="bar">
-          <div id="icon">
-          	<p>icon</p>
-          	<!-- <img src=""> -->
-          </div>
-		  <div class="nav navbar-nav">
-		    <a class="nav-item nav-link " href="index_v0.html">Home <span class="sr-only">(current)</span></a>
-		    <a class="nav-item nav-link active" href="">食物</a>
-		    <a class="nav-item nav-link" href="#">飲品</a>
-		    <a class="nav-item nav-link" href="transition_map.html">地圖</a>
-		  </div>
-		  </div>
-		</nav>
+        <nav class="navbar navbar-dark bg-inverse ">
+            <div id="bar">
+                <div id="icon">
+                    <p>icon</p>
+                    <!-- <img src=""> -->
+                </div>
+                <div class="nav navbar-nav">
+                    <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="transition_food.html">食物</a>
+                    <a class="nav-item nav-link" href="transition_drink.html">飲品</a>
+                    <a class="nav-item nav-link" href="transition_map.html">地圖</a>
+                </div>
+            </div>
+        </nav>
     </header>
-        <!-- <div id="aside">
-            <div><a class="btn btn-primary" href="transition_food.html" role="button">食</a></div>
-            <div><a class="btn btn-primary" href="transition_drink.html" role="button">飲</a></div>
-            <div><a class="btn btn-primary" href="transition_map.html" role="button">行</a></div>
-        </div>
- -->
- 	<div id="three">
- 		<h3>三峽老街</h3>
- 		<!-- <img src="img/three.jpg"> -->
- 	</div>
 
 
- 	<div id="container">
+
+    <h3 class="word">一間間的紅廊和巴洛克建築，</h3>
+    <h3 class="word">濃濃的古早味，不禁讓人產生一股懷舊之情</h3>
+    <div id="container">
         <div id="main-part">
             <ul>
-                <li>
+                <li id="firstImg">
                     <div>
                         <a href="bread.html">
-                            <img id="firstImg" src="img/bread.png" alt="金牛角">
+                            <img src="img/tran-food/bread.png" alt="金牛角">
                         </a>
-                        <!-- <p>金牛角</p> -->
+                        <h5>金牛角</h5>
                     </div>
                 </li>
-                <li>
+                <li id="flower">
                     <div>
-                        <img id="flower" class="width" src="img/flower.png" alt="Card image cap">
-                        <div>
-                            <!-- <p>米血糕</p> -->
-                        </div>
+                        <h5>豆花</h5>
+                        <a>
+                            <img class="width" src="img/tran-food/flower.png" alt="Card image cap">
+                        </a>
                     </div>
                 </li>
-                <li>
+                <li id="breadcream">
                     <div>
-                        <img id="breadcream" src="img/breadicecream.png" alt="Card image cap">
-                        <div>
-                            <!-- <p>雞蛋糕</p> -->
-                        </div>
+                        <a>
+                            <img src="img/tran-food/breadicecream.png" alt="Card image cap">
+                        </a>
+                        <h5>牛角冰淇淋</h5>
                     </div>
                 </li>
-                <li>
+                <li id="chickenegg">
                     <div>
-                        <img id="chickenegg" src="img/chickenegg.png" alt="Card image cap">
-                        <div>
-                            <!-- <p class="card-text">豆花</p> -->
-                        </div>
+                        <h5>雞蛋糕</h5>
+                        <a>
+                            <img src="img/tran-food/chickenegg.png" alt="Card image cap">
+                        </a>
                     </div>
                 </li>
-                <li>
+                <li id="pigblood">
                     <div>
-                        <img id="pigblood" src="img/pigblood.png" alt="Card image cap">
-                        <div>
-                            <!-- <p class="card-text">豆花</p> -->
-                        </div>
+                        <a>
+                            <img src="img/tran-food/pigblood.png" alt="Card image cap">
+                        </a>
+                        <h5>豬血糕</h5>
                     </div>
                 </li>
-                <li>
+                <li id="myyasu">
                     <div>
-                        <img id="" src="img/pigblood.png" alt="Card image cap">
-                        <div>
-                            <!-- <p class="card-text">豆花</p> -->
-                        </div>
+                    	<h5>麥芽酥</h5>
+                    	<a>
+                        	<img id="myyasu" src="img/tran-food/myyasu.png" alt="Card image cap">
+                        </a>
                     </div>
                 </li>
             </ul>
-
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     <footer id="footer">
         <div>
             <h3>相關連結</h3>
@@ -115,17 +104,9 @@
             <a href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=65">新北市觀光旅遊網</a>
         </div>
         <h3>Web programming 期末專案</h3>
-		<p>&copy; 2016 戴玉娟 蕭卉洳 陳敬淳 那玉昕 劉皪</p>
+        <p>&copy; 2016 戴玉娟 蕭卉洳 陳敬淳 那玉昕 劉皪</p>
     </footer>
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
     <script src="jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/transition_food.js"></script>
-    <!-- <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script type="text/javascript">
-    var s = skrollr.init(); //初始化
-    </script> -->
 </body>
-
 </html>

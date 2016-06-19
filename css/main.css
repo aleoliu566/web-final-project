@@ -1,20 +1,12 @@
 html, body{
 	margin: 0;
-	padding: 0; 
-	/*background-color: #D7CBAC;*/
-	/*background-image:url('../img/bg2.png');*/
-	/*background-color: rgb(157, 167, 183);*/
-	/*background-color: rgb();*/
-}
-header{
-	/*display: flex;*/
+	padding: 0;
 }
 div>a{
 	text-decoration: none;
 }
 .title{
 	flex: 80%;
-	/*text-decoration: none;*/
 }
 #weather{
 	flex: 20%;
@@ -23,7 +15,6 @@ div>a{
 	display: flex;
 	height: 500px;
 	overflow:hidden;
-	/*border:1px black dotted;*/
 }
 #content > div > a >img {
 	width: 100%;
@@ -37,7 +28,6 @@ div>a{
 }
 #map{
 	flex: 20%;
-	/*background-color: grey;*/
 	font-size: 40px;
 	text-align: center;
 }
@@ -58,7 +48,6 @@ div>a{
 }
 /*本週天氣*/
 td{
-	/*border:1px black solid;*/
 	width:23%;
 }
 
