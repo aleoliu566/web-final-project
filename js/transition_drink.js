@@ -14,14 +14,14 @@ $(window).scroll(function() {
 });
 // $(document).ready(function() {
 	var h = $("#tea").height();
-	var height = h*3;
-	console.log($("#firstImg").height());
-	console.log(height);
-	$("#container").height(height);
+	// var height = h*3;
+	// console.log($("#firstImg").height());
+	// console.log(height);
+	// $("#container").height(height);
 // });
 $(window).resize(function() {
 	var h = $("#tea").height();
-	var height = h*3;
-	console.log($("#firstImg").height());
-	$("#container").height(height);
+	// var height = h*3;
+	// console.log($("#firstImg").height());
+	// $("#container").height(height);
 });
