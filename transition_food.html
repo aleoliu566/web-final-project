@@ -14,28 +14,25 @@
         <h3 class="display-3">三峽老街</h3>
         <!-- <img src="img/three.jpg"> -->
         <!-- <img src="img/icon.jpg"> -->
-        <svg width="200" height="200">
+        <!-- <svg width="200" height="200">
             <circle cx="100" cy="50" r="25" stroke="white" stroke-width="2" fill="transparent" />
             <circle cx="100" cy="50" r="8" fill="white" />
             <path d="M 100 75 L 100 230" stroke-width="3" stroke="white" fill="white">
-        </svg>
+        </svg> -->
     </div>
 
-    <header>
-        <nav class="navbar navbar-dark bg-inverse ">
-            <div id="bar">
-                <div id="icon">
-                    <p>icon</p>
-                    <!-- <img src=""> -->
-                </div>
-                <div class="nav navbar-nav">
-                    <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="transition_food.html">食物</a>
-                    <a class="nav-item nav-link" href="transition_drink.html">飲品</a>
-                    <a class="nav-item nav-link" href="transition_map.html">地圖</a>
-                </div>
-            </div>
-        </nav>
+    <header id="header">
+        <div id="bar">
+            <a id="icon">
+                <img src="img/smallIcon.png" alt="icon喔">
+            </a>
+                <ul id="paging">
+                    <li><a href="index.html"><img src="img/barIcon/home.png"></a></li>
+                    <li class="active"><a href="transition_food.html"><img src="img/barIcon/food.png"></a></li>
+                    <li><a href="transition_drink.html"><img src="img/barIcon/drink.png"></a></li>
+                    <li><a href="transition_map.html"><img src="img/barIcon/map.png"></a></li>
+                </ul>
+        </div>
     </header>
 
 
@@ -96,15 +93,26 @@
             </ul>
         </div>
     </div>
-    <footer id="footer">
+
+    <div id="related">
         <div>
-            <h3>相關連結</h3>
-            <a href="http://www.sanchiaoyung.com.tw/">三峽老街官網</a>
-            <br>
-            <a href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=65">新北市觀光旅遊網</a>
+          <img src="img/three.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">三峽老街官網</p>
+          </div>
         </div>
+        <div>
+          <img src="img/three.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">新北市觀光旅遊網</p>
+          </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
         <h3>Web programming 期末專案</h3>
-        <p>&copy; 2016 戴玉娟 蕭卉洳 陳敬淳 那玉昕 劉皪</p>
+        <p>&copy; 2016 戴鈺娟 蕭卉汝 陳敬淳 那玉昕 劉皪</p>
     </footer>
     <script src="jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="js/transition_food.js"></script>

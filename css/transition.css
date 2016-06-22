@@ -1,25 +1,67 @@
 a{
 	text-decoration: none;
-	/*font-size: 50px;*/
 }
 /*********bar********/
+.fixed{
+	position: fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index: 5;
+}
+.active{
+	border:1px solid black;
+}
 #bar{
 	display: flex;
+	/*width: 100%;*/
+	background-color: rgb(93,93,93);
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 }
 #icon{
-	width: 70%;
+	flex: 1;
+	padding-left:10%; 
+	width: 60%;
+}
+#icon>img{
+	width: 40px;
+}
+#paging{ 
+	flex: 4;
+	text-align: right;
+	list-style-type:none; 
+	margin-right: 3%;
+	margin-bottom: 0;
+}
+#paging>li{
+	display: inline-block;
+	margin-left:5%; 
+}
+#paging>li>a{
+	color: black;
+	width: 100%;
+}
+/***********bar上面的小icon********/
+#paging>li>a>img{
+	width: 32px;
 }
 
 
+/***********************************************************/
+/*******************                  **********************/
+/*******************   最上面的大圖     **********************/
+/*******************                  **********************/
+/***********************************************************/
 #three{
 	background-image:url('../img/tran.jpg');
 	background-size: cover;
 	background-color: white;
 	position: relative;
-	text-align: center; 
+	text-align: center;
+	height: 300px;
 }
 #three>h3{
-	
 	color: white;
 	padding-top:10%;
 	/*margin-bottom: 190px;*/
@@ -31,16 +73,20 @@ a{
 	bottom: 0px;
 }
 
+/***********************************************************/
+/************************          *************************/
+/************************    內容   *************************/
+/************************          *************************/
+/***********************************************************/
+
+
+/**************文字******************/
 .word{
 	margin: 5% 5% 5% 5%;
 	text-align: center;
 	/*font-family: 漢儀長美黑;*/
 }
-
-#transition_content{
-	display: flex;
-	margin-top: 5%;
-}
+/**************圖案*****************/
 #main-part{
 	width: 70%;
 	/*height: 800px;*/
@@ -50,19 +96,23 @@ a{
 #main-part li{
 	list-style: none;
 	position: relative;
-	/*display: none;*/
-	/*display: flex;*/
 	opacity:0;
 }
 #main-part img{
-	width: 80%;
+	/*padding: 5%;*/
+	width: 70%;
 }
 #main-part>ul>li:nth-child(odd){
-	/*float: left;*/
-	/*text-align: left;*/
+	margin-left: -10%;
 }
 #main-part>ul>li:nth-child(even){
-	/*text-align: right;*/
+	margin-right: -10%;
+}
+#main-part>ul>li:nth-child(odd)>div>a{
+	/*border-right: 1px solid black;*/
+}
+#main-part>ul>li:nth-child(even)>div>a{
+	/*border-left: 1px solid black;*/
 }
 #main-part>ul{
 	padding: 0px;
@@ -78,13 +128,39 @@ a{
 	margin-top:15%; 
 }
 
-
-
-footer{
-	/*display: ;*/
+/***********************************************************/
+/************************          *************************/
+/************************  相關網站 *************************/
+/************************          *************************/
+/***********************************************************/
+#related{
+	display: flex;
+	background-color: rgb(37,37,38);
+	padding:3% 30% 3% 30%; 
+	margin: auto;
 }
+#related>div{
+	flex:1;
+	margin: 0 2%;
+	background-color: grey;
+	border-radius: 3%;
+}
+#related>div>img{
+	width: 100%;
+}
+
+
+/***********************************************************/
+/************************          *************************/
+/************************  footer  *************************/
+/************************          *************************/
+/***********************************************************/
 footer>div{
 	background-color: grey;
+}
+footer h3{
+	padding: 3%;
+	margin: 0;
 }
 footer a{
 	color: white;
@@ -92,6 +168,11 @@ footer a{
 	padding-right:100px;
 	text-align: center;
 }
+
+
+
+
+
 
 /*各物介紹頁*/
 #button>button{

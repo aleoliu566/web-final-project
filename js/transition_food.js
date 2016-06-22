@@ -1,30 +1,41 @@
 /************transition food page ***************/ 
 
-$('#firstImg').fadeTo(2000,1);
-$(window).scroll(function() {
-    // if ($(window).scrollTop() > 1) {
-    	// $('#firstImg').fadeIn(1000);
-    // }
-    if($(window).scrollTop() > (200+h/3)){
-    	$('#flower').fadeTo(2000,1);
+// $('#firstImg').fadeTo(2000,1)
 
-    	// $('#flower').fadeIn(2000);
+var h = $("#firstImg").height();
+var topPicture = $("#three").height();
+
+$('#firstImg').animate({ left: "+5%", opacity: 1 }, 2000);
+
+$(window).scroll(function() {
+    if($(window).scrollTop() > (200+h/3)){
+    	$('#flower').animate({ right: "+5%", opacity: 1 }, 2000);
     }
     if($(window).scrollTop() > 200+3*(h/3)){
-    	$('#breadcream').fadeTo(2000,1);
+    	$('#breadcream').animate({ left: '+5%', opacity: 1 }, 2000)
     }
     if($(window).scrollTop() > 200+5*(h/3)){
-    	$('#chickenegg').fadeTo(2000,1);
+    	$('#chickenegg').animate({ right: "+5%", opacity: 1 }, 2000);
     }
     if($(window).scrollTop() > 200+7*h/3){
-    	$('#pigblood').fadeTo(2000,1);
+    	$('#pigblood').animate({ left: "+5%", opacity: 1 }, 2000)
 	}
-    // $('#chickenegg').fadeIn(1000);
     if($(window).scrollTop() > 200+9*h/3){
-    	$('#myyasu').fadeTo(2000,1);
-    }	
+    	$('#myyasu').animate({ right: "+5%", opacity: 1 }, 2000);
+    }
+    /*******************/
+    /********bar********/
+    /*******************/ 
+    if($(window).scrollTop()> topPicture){
+        $("#bar").css("background-color","rgba(255,255,255,0.7)");
+        $("header").addClass("fixed");
+    }
+    if($(window).scrollTop()<topPicture){
+        $("#bar").css("background-color","rgb(93,93,93)");
+        $("header").removeClass("fixed");
+    }
 });
-	var h = $("#firstImg").height();
+
 	// var height = h*6;
 	// console.log($("#firstImg").height());
 	// console.log(height);
@@ -32,19 +43,15 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
 	h = $("#firstImg").height();
+    topPicture = $("#three").height();
 // 	var height = h*6;
 // 	// console.log($("#firstImg").height());
 // 	$("#container").height(height);
 });
 
 
-// console.log(h);
-// 直線
-// var a = $("<svg width="+"20" + "height="+"300><path d="+"M 100 75 L 100 180"+"stroke-width="+"3"+" stroke=black fill=black></svg>");
-// a.appendTo("#container");
 
-
-
+/***************************************************************************************/ 
  
 
 $("#store").click(function() {
