@@ -11,12 +11,10 @@ $("#index").mouseout(function() {
     $('#index').css("background-color", "");
 });
 
-// $(document).ready() {
+// $(document).ready(function(){
     function countSecond() {　
         x = x + 1
-            // 　 document.fm.displayBox.value=x;
-            　 setTimeout("countSecond()", 1000);
-        // console.log(x);
+        setTimeout("countSecond()", 1000);
         if (x % 30 == 29) {
             $('#bg-pic-right').fadeOut(1000);
         }
@@ -65,4 +63,4 @@ $("#index").mouseout(function() {
         }
     }
     countSecond();
-// }
+// });

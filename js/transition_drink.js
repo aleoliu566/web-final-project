@@ -23,7 +23,7 @@ $(window).scroll(function() {
 });
 // $(document).ready(function() {
 	var h = $("#tea").height();
-	var topPicture = $("#three").height();
+	var topPicture = $(".three").height();
 	// var height = h*3;
 	// console.log($("#firstImg").height());
 	// console.log(height);
@@ -31,7 +31,7 @@ $(window).scroll(function() {
 // });
 $(window).resize(function() {
 	var h = $("#tea").height();
-	var topPicture = $("#three").height();
+	var topPicture = $(".three").height();
 	// var height = h*3;
 	// console.log($("#firstImg").height());
 	// $("#container").height(height);

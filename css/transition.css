@@ -25,7 +25,7 @@ a{
 	width: 60%;
 }
 #icon>img{
-	width: 40px;
+	width: 32px;
 }
 #paging{ 
 	flex: 4;
@@ -53,24 +53,31 @@ a{
 /*******************   最上面的大圖     **********************/
 /*******************                  **********************/
 /***********************************************************/
-#three{
-	background-image:url('../img/tran.jpg');
-	background-size: cover;
-	background-color: white;
+.three{
+	
+	/*background-color: white;*/
 	position: relative;
 	text-align: center;
-	height: 300px;
+	/*height: 300px;*/
 }
-#three>h3{
+.three>h3{
 	color: white;
-	padding-top:10%;
-	/*margin-bottom: 190px;*/
+	padding:15%;
+	margin: 0;
 }
-#three>img{
+.three>img{
 	position: relative;
 	/*left:;*/
 	/*margin: auto;*/
 	bottom: 0px;
+}
+#foodThree{
+	background-image:url('../img/tran.jpg');
+	background-size: cover;
+}
+#drinkThree{
+	background-image:url('../img/tran04.png');
+	background-size: cover;
 }
 
 /***********************************************************/
@@ -136,56 +143,34 @@ a{
 #related{
 	display: flex;
 	background-color: rgb(37,37,38);
-	padding:3% 30% 3% 30%; 
-	margin: auto;
+	padding:3% 15% 3% 15%;
+	margin-top: 10%;
 }
 #related>div{
 	flex:1;
 	margin: 0 2%;
-	background-color: grey;
 	border-radius: 3%;
+	text-align: center;
+	padding: 2%;
+	border: 1px solid rgb(86,86,86);
 }
-#related>div>img{
+#related img{
 	width: 100%;
 }
-
+#related p{
+	padding-top: 5%;
+	margin: 0;
+	color: rgb(86,86,86);
+	font-size: 16px;
+}
 
 /***********************************************************/
 /************************          *************************/
 /************************  footer  *************************/
 /************************          *************************/
 /***********************************************************/
-footer>div{
-	background-color: grey;
-}
+
 footer h3{
 	padding: 3%;
 	margin: 0;
-}
-footer a{
-	color: white;
-	padding-left:100px;
-	padding-right:100px;
-	text-align: center;
-}
-
-
-
-
-
-
-/*各物介紹頁*/
-#button>button{
-	width: 100px;
-	border-radius:10px;
-	background-color: black;
-	color: white;
-	border: 0;
-	margin: 3%;
-}
-#button>button>p{
-	margin: 8px;
-}
-#store-map{
-	display: none
 }

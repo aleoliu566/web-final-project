@@ -3,7 +3,7 @@
 // $('#firstImg').fadeTo(2000,1)
 
 var h = $("#firstImg").height();
-var topPicture = $("#three").height();
+var topPicture = $(".three").height();
 
 $('#firstImg').animate({ left: "+5%", opacity: 1 }, 2000);
 
@@ -43,7 +43,7 @@ $(window).scroll(function() {
 
 $(window).resize(function() {
 	h = $("#firstImg").height();
-    topPicture = $("#three").height();
+    topPicture = $(".three").height();
 // 	var height = h*6;
 // 	// console.log($("#firstImg").height());
 // 	$("#container").height(height);

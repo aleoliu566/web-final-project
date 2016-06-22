@@ -1,7 +1,6 @@
 body{
 	background-color: black;
 	color: rgb(224,225,226);
-
 }
 #bg-picture{
 	display: flex;
@@ -45,7 +44,7 @@ body{
 }
 #menu>div{
 	list-style-type:none;
-	padding-top: 15px;
+	padding-top: 50px;
 	padding-bottom: 10px;
 	border-color: rgb(213,73,29);
 	padding-right:10px;
