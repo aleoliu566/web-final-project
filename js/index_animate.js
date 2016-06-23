@@ -11,7 +11,7 @@ var object = [ "#index", "#food", "#drink", "#map" ];
     });
 
     $("#index").mouseover(function() {
-        $("#index").addClass("bgcolor");
+        $("#index").stop().addClass("bgcolor");
         $("#index a img").animate({ opacity: 1 }, 500);
     }).mouseleave(function() {
         $("#index a img").animate({ opacity: 0 }, 100);

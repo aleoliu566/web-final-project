@@ -1,0 +1,239 @@
+a{
+	text-decoration: none;
+	/*font-size: 50px;*/
+}
+/*********bar********/
+#bar{
+	display: flex;
+}
+#icon{
+	width: 70%;
+}
+
+
+#three{
+	background-image:url('../img/tran.jpg');
+	background-size: cover;
+	background-color: white;
+	position: relative;
+	text-align: center; 
+}
+#three>h3{
+	
+	color: white;
+	padding-top:10%;
+	/*margin-bottom: 190px;*/
+}
+#three>img{
+	position: relative;
+	/*left:;*/
+	/*margin: auto;*/
+	bottom: 0px;
+}
+
+#main-part{
+	width: 70%;
+	/*height: 800px;*/
+	margin: auto;
+}
+
+
+
+/*map_start*/
+
+body{
+	background-color: rgb(249, 237, 228);
+}
+
+#mapBox div img{
+	width: 100%;
+}
+
+#mapBox{
+	position: relative;
+	display: flex;
+}
+
+#mainMap{
+	width: 100%;
+	height: 100%;
+}
+
+.mapItems{
+	width:8%;
+	height: 8%;
+}
+
+#egg{
+	position: absolute;
+	left: 22.7%;
+	top: 13%;
+}
+
+#plum{
+	position: absolute;
+	left: 35.3%;
+	top: 13%;
+}
+
+#icecream{
+	position: absolute;
+	left: 52.6%;
+	top: 13%;
+}
+
+#bread{
+	position: absolute;
+	left: 78.3%;
+	top: 14%;
+}
+
+#brave{
+	position: absolute;
+	left: 4.6%;
+	top: 42%;
+	
+}
+
+#candy{
+	position: absolute;
+	left: 14.9%;
+	top: 42%;
+}
+
+#pigblood{
+	position: absolute;
+	left: 28.6%;
+	top: 42%;
+}
+
+#milk{
+	position: absolute;
+	left: 41.5%;
+	top: 42%;
+}
+
+#don{
+	position: absolute;
+	left: 57.9%;
+	top: 65%;
+}
+
+#water{
+	position: absolute;
+	left: 83.5%;
+	top: 71.5%;
+}
+
+#traffic-title{
+	width: 100%;
+	background-color: rgb(88,61,52);
+	padding: 1%;
+	color: white;
+	text-align: center
+}
+
+.traffic-main{
+	display: flex;
+	text-align: left;
+	background-color: white
+}
+
+.traffic-icon img{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+#highspeed-main{
+	border-bottom:0.5px solid rgb(88,61,52);
+}
+
+#highspeed-icon{
+	background-color: rgb(114, 83, 56);
+	width: 20%;
+}
+
+
+#highspeed-content{
+	margin-left: 2%;
+	margin-top: 2%;
+	width: 80%;
+}
+
+
+#bus-icon{
+	display: flex;
+	background-color: rgb(237, 207, 169);
+	width: 20%;
+	align-items:center;
+    justify-content:center;
+}
+
+#car-icon{
+	display: flex;
+	background-color: rgb(188, 150, 118);
+	width: 20%;
+}
+
+#bus-main{
+	border-bottom:0.3px solid rgb(88,61,52);
+}
+
+#bus-all{
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+
+.bus-content{
+	margin-left: 2%;
+	margin-top: 2%;
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+#car-content{
+	width: 80%;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.traffic-icon2{
+	width: 80%;
+}
+
+
+
+/*map_end*/
+
+
+footer{
+	/*display: ;*/
+}
+footer>div{
+	background-color: grey;
+}
+footer a{
+	color: white;
+	padding-left:100px;
+	padding-right:100px;
+	text-align: center;
+}
+
+/*各物介紹頁*/
+#button>button{
+	width: 100px;
+	border-radius:10px;
+	background-color: black;
+	color: white;
+	border: 0;
+	margin: 3%;
+}
+#button>button>p{
+	margin: 8px;
+}
+#store-map{
+	display: none
+}

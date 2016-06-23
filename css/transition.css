@@ -1,3 +1,7 @@
+body{
+	min-width: 220px;
+	background-color: rgb(249, 237, 228);
+}
 a{
 	text-decoration: none;
 }
@@ -10,12 +14,11 @@ a{
 	z-index: 5;
 }
 .active{
-	border:1px solid rgb(86,86,86);
+	border:1px solid #E7754A;
 }
 #bar{
 	display: flex;
 	background-color: rgb(37,37,38);
-	/*background-color: rgb(93,93,93);*/
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
 }
@@ -64,7 +67,7 @@ a{
 }
 .three>h3{
 	color: white;
-	padding:15%;
+	padding:13%;
 	margin: 0;
 }
 .three>img{
@@ -81,6 +84,10 @@ a{
 	background-image:url('../img/tran04.png');
 	background-size: cover;
 }
+#mapThree{
+	background-image:url('../img/tran05.png');
+	background-size: cover;
+}
 
 /***********************************************************/
 /************************          *************************/
@@ -91,14 +98,13 @@ a{
 
 /**************文字******************/
 .word{
-	margin: 5% 5% 5% 5%;
+	font-size: 24px;
+	margin: 3% 5% 3% 5%;
 	text-align: center;
-	/*font-family: 漢儀長美黑;*/
 }
 /**************圖案*****************/
 #main-part{
 	width: 70%;
-	/*height: 800px;*/
 	text-align: center;
 	margin: auto;
 }
@@ -167,7 +173,6 @@ a{
 	font-size: 16px;
 }
 .outward>a>p:hover{
-
 	text-decoration: none;
 }
 

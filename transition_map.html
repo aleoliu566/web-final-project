@@ -1,98 +1,215 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title></title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/transition.css">
-	<link rel="stylesheet" type="text/css" href="css/detail.css">
+<head>
+    <meta charset="utf-8">
+    <title>懷舊三峽</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main1.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/transition.css">
+    <link rel="stylesheet" type="text/css" href="css/transition_media.css">
+    <link rel="stylesheet" type="text/css" href="css/mapcss.css">
+    <link rel="shortcut icon" href="img/logo.ico">
 </head>
+
 <body>
-<header>
-	<div class="title"><h1><a href="index.html">三峽老街（logo）</a></h1></div>
-	<div id="weather"><h2>天氣</h2></div>
-</header>
-<div id="transition_content">
-	<div id="aside">
-		<div><a class="btn btn-primary" href="transition_food.html" role="button">食</a></div>
-		<div><a class="btn btn-primary" href="transition_drink.html" role="button">飲</a></div>
-		<div><a class="btn btn-primary" href="transition_map.html" role="button">行</a></div>
-		
-<!-- 	<div><input type="button" value="食"></div>
-		<div><input type="button" value="飲"></div>
-		<div><input type="button" value="行"></div> -->
-	</div>
+    <div class="three" id="mapThree">
+        <h3 class="display-3">三峽老街</h3>
+        <!-- <img src="img/three.jpg"> -->
+        <!-- <img src="img/icon.jpg"> -->
+        <!-- <svg width="200" height="200">
+            <circle cx="100" cy="50" r="25" stroke="white" stroke-width="2" fill="transparent" />
+            <circle cx="100" cy="50" r="8" fill="white" />
+            <path d="M 100 75 L 100 230" stroke-width="3" stroke="white" fill="white">
+        </svg> -->
+    </div>
+    <header id="header">
+        <div id="bar">
+            <a id="logo" href="index.html">
+                <img src="img/logo_nav.png" alt="icon喔">
+            </a>
+            <ul id="paging">
+                <li>
+                    <a href="index.html"><img src="img/barIcon2/home.png"></a>
+                </li>
+                <li>
+                    <a href="transition_food.html"><img src="img/barIcon2/food.png"></a>
+                </li>
+                <li>
+                    <a href="transition_drink.html"><img src="img/barIcon2/drink.png"></a>
+                </li>
+                <li  class="active">
+                    <a href="transition_map.html"><img src="img/barIcon2/map.png"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <div id="mapBox">
+    	<img src="img/tran-map/map.png" id="mainMap">
+    	<div class="mapItems up" id="egg">
+    		<a href="single-object/egg.html">
+    			<img src="img/tran-map/egg.png">
+    		</a>
+    	</div>
+    	<div class="mapItems up" id="plum">
+    		<a href="single-object/woomay.html">
+    			<img src="img/tran-map/plum.png">
+    		</a>
+    	</div>
+    	<div class="mapItems up" id="icecream">
+    		<a href="single-object/icecream.html">
+    			<img src="img/tran-map/icecream.png">
+    		</a>
+    	</div>
+    	<div class="mapItems up" id="bread">
+    		<a href="single-object/bread.html">
+    			<img src="img/tran-map/bread.png">
+    		</a>		
+    	</div>
+    	<div class="mapItems down" id="brave">
+    		<a href="single-object/douhwa.html">
+    			<img src="img/tran-map/brave.png">
+    		</a>
+    	</div>
+    	<div class="mapItems down" id="candy">
+    		<a href="single-object/miyasu.html">
+    			<img src="img/tran-map/candy.png">
+    		</a>
+    	</div>
+    	<div class="mapItems down" id="pigblood">
+    		<a href="single-object/bloodcake.html">
+    			<img src="img/tran-map/pigblood.png">
+    		</a>  		
+    	</div>
+    	<div class="mapItems down" id="milk">
+    		<a href="single-object/milktea.html">
+    			<img src="img/tran-map/milk.png">
+    		</a>	
+    	</div>
+    	<div class="mapItems down" id="don">
+    		<a href="single-object/dongwa.html">
+    			<img src="img/tran-map/don.png">
+    		</a>
+    	</div>
+    	<div class="mapItems down" id="water">
+    		<a href="single-object/douhwa.html">
+    			<img src="img/tran-map/water.png">
+    		</a>	
+    	</div>
+    </div>
+    
+
+
 	<div id="main-part">
-		<div class="center">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5421.510667393092!2d121.3674603854115!3d24.932760266625923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681bee53853569%3A0x684fe296ee5ee0d4!2z5LiJ5bO96ICB6KGX6YGK5a6i5pyN5YuZ5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1465544424096" width="700" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
 		<div>
-			<h5>交通資訊</h5>
-			<pre>
-高鐵
-至板橋站下車，走文化路出口到文化路的公車站-新板橋車站(靠板橋車站這一側)
-轉乘
-台北客運910(走高速公路 三峽國小站下車步行至老街約5分鐘)
-702(三峽老街站或三峽國小站下車步行至老街約5分鐘)
-703(※固定班假日停 台北客運三峽 二站總站 下車步行至老街約15分鐘)
- 
-國光客運
-其中經三峽(恩主公醫院)班次：下車處~恩主公醫院(步行至老街約15分鐘)
-板橋新客運站 開08:30、11:30、14:30、17:30。 台北~大溪
- 
-統聯客運
-松山台南線下車處 復興路 大勇路口步行至老街約15分鐘
-板橋高雄線下車處 復興路 大勇路口步行至老街約15分鐘
- 
-台北客運
-275正線 三峽~松山機場
-275副線 三峽~松山機場以上兩線下車站:三峽老街或三峽總站步行至老街約10分鐘
-702三峽~台北三峽老街站或三峽國小站下車步行至老街約5分鐘
-703三峽~台北※固定班假日停 台北客運 三峽二站總站 下車步行至老街約15分鐘
-703副線三峽~台北※固定班假日停 三峽老街站下車步行至老街約10分鐘
-705三峽~台北三峽老街站或三峽國中站下車步行至老街約10分鐘
-706三峽~北市重慶南路三峽老街站或三峽國中站下車步行至老街約10分鐘
-812三峽~台北車站三峽鎮公所下車步行至老街約3分鐘
-833三峽~鶯歌假日文化巴士 一張票可玩鶯歌三峽 詳情洽鶯歌陶瓷博物館三峽鎮公所下車步行至老街約3分鐘
- 
-捷運接駁專線
-908三峽~捷運景安站北二高→三峽國小站或和平街口站下車步行至老街約5分鐘
-910三峽~捷運新埔站北二高→三峽國小站下車步行至老街約5分鐘
-916三峽~捷運永寧站北二高→三峽國小站下車步行至老街約5分鐘
-藍43三峽~捷運永寧站經樹林柑園、土城工業區 未行駛北二高 台北客運三峽二站總站下車步行至老街約15分鐘
- 
-首都客運
-802三峽~捷運新埔站本線經樹林新莊到板橋，在三峽國小站下車步行至老街約五分鐘 北二高
-北二高916三峽~捷運永寧站三峽國小站下車步行至老街約五分鐘
-三峽~台北圓環(經民安路)本線經樹林、新莊、三重、台北，在三峽國中站下車步行至老街約10分鐘
- 
-桃園客運
-三峽~桃園(經尖山)本路線於文化市場站下車步行老街約5分鐘
-三峽~桃園(經中湖)本路線於文化市場站下車步行老街約5分鐘
- 
-自行開車
-走北二高由三鶯交流道，循中山路直行，右轉民權路即可到達，沿途皆有指標。
-北上車輛可由三鶯交流道-文化路閘道下，直行至中山路右轉即可到達。
- 
-GPS定位  
-東經: 121.368215   北緯: 24.930871
-			</pre>
+			<div id="traffic-title">
+				<h5>交通資訊</h5>
+			</div>
+			<div class="traffic-main" id="highspeed-main">
+				<div class="traffic-icon" id="highspeed-icon">
+					<img src="img/tran-map/highSpeed.png">
+				</div>
+				<div id="highspeed-content">
+				<strong>高鐵</strong><br>
+				至板橋站下車，走文化路出口到文化路的公車站-新板橋車站(靠板橋車站這一側)<br>
+				轉乘台北客運910(走高速公路 三峽國小站下車步行至老街約5分鐘)<br>
+				702(三峽老街站或三峽國小站下車步行至老街約5分鐘)<br>703(※固定班假日停 台北客運三峽 二站總站 下車步行至老街約15分鐘)<br></div>
+			</div>
+			<div class="traffic-main" id="bus-main">
+				<div class="traffic-icon" id="bus-icon">
+						<img src="img/tran-map/bus.png">
+				</div>
+				<div id="bus-all">
+					<div class="bus-content">
+						<strong>國光客運</strong><br>
+						其中經三峽(恩主公醫院)班次：下車處~恩主公醫院<br>
+						下車處 板橋新客運站
+					</div>
+					
+					<div class="bus-content">
+						<strong>統聯客運</strong><br>
+						松山台南線<br>
+						板橋高雄線 
+					</div>
+
+					<div class="bus-content">
+						<strong>台北客運</strong><br>
+						275 正線<br> 
+						275 副線<br>
+						702 三峽~台北三峽<br>
+						703 三峽~台北<br>
+						703 副線三峽~台北<br>
+						705 三峽~台北<br>
+						706 三峽~北市重慶南路<br>
+						812 三峽~台北車站<br>
+						833 三峽~鶯歌假日文化巴士
+					</div>	
+
+					<div class="bus-content">
+						<strong>首都客運</strong><br>
+						802三峽~捷運新埔站<br>
+						916三峽~捷運永寧站<br>
+						三峽~台北圓環(經民安路)<br>
+					</div>	
+					<div class="bus-content">
+						<strong>桃園客運</strong><br>
+						三峽~桃園(經尖山)<br>
+						三峽~桃園(經中湖)<br>
+
+					</div>	
+				</div>
+
+			</div>	
+			<div class="traffic-main" id="car-main">
+				<div class="traffic-icon" id="car-icon">
+					<img src="img/tran-map/car.png">
+				</div>
+				<div id="car-content">
+					<p><strong>自行開車</strong><br>
+					走北二高由三鶯交流道，循中山路直行，右轉民權路即可到達，沿途皆有指標。<br>
+					北上車輛可由三鶯交流道-文化路閘道下，直行至中山路右轉即可到達。
+					</p>
+				</div>			
+			</div>
+
 		</div>
 	</div>
 </div>
 
-<footer>
-	<div>
-		<h3>相關連結</h3>
-		<a href="http://www.sanchiaoyung.com.tw/">三峽老街官網</a><br>
-		<a href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=65">新北市觀光旅遊網</a>
-	</div>
-	<h3>余能豪老師web課----期末專案</h3>
-</footer>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script> -->
 
+
+    <div id="related">
+        <div>
+            <a class="outward" href="http://www.sanchiaoyung.com.tw/"><img src="img/re1.png" alt="三峽老街官網">
+                <p>三峽老街<br>官方網站</p>
+            </a>
+        </div>
+        <div class="none">
+            <a class="outward" href="https://www.facebook.com/sanchiaoyung?ref=stream&hc_location=timeline&__mref=message_bubble"><img src="img/re4.png" alt="三峽老街粉絲專頁">
+                <p>三峽老街<br>粉絲專頁</p>
+            </a>
+        </div>
+        <div>
+            <a class="outward" href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=136&id=12471eb710c000005572"><img src="img/re2.png" alt="新北市觀光旅遊網">
+                <p>新北市<br>觀光旅遊網</p>
+            </a>
+        </div>
+        <div class="none">
+            <a class="outward" href="http://www.sanchiaoyung.org.tw/front/bin/home.phtml"><img src="img/re3.png" alt="三角湧文化協進會">
+                <p>三角湧<br>文化協進會</p>
+            </a>
+        </div>
+    </div>
+    <footer id="footer">
+        <h3>Web programming 期末專案</h3>
+        <p>&copy; 2016 戴鈺娟 蕭卉汝 陳敬淳 那玉昕 劉皪</p>
+    </footer>
+    <script src="jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/transition_map.js"></script>
 </body>
+
 </html>
