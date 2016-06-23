@@ -17,41 +17,45 @@ a{
 #pic{
 	width:50%;
 	height:100%;
+	margin-top: 5%;
 	margin-right:5%;
 }
 #bottons{
-	width:100%;
+	width:80%;
 	display:flex;
-
-
+	/*margin-bottom: 5%;*/
+	margin: 0% 10% 5% 10%;
 }
 .botton{
 	font-size:1.5rem;
+	margin: 3%;
+}
+#botton1{
+	border-radius: 5%;
+	flex: 1;
+	padding: 2%;
 }
 #botton2{
-	float:right;
-	margin-left:33%;
+	flex: 1;
+	border-radius: 5%;
+	padding: 2%;
 }
 
 #intro{
 	width:50%;
-	display:flex;
-    flex-wrap: wrap;
-
 }
 #store-info{
 	font-size:1rem;
 }
 #text{
 
-	width:80%;
+	width:100%;
 	margin-left:2%;
-	font-size:1.2rem;
+	/*font-size:1.2rem;*/
 	color:black;
     
 }
 #store{
-
 	display:flex;
 	flex-wrap: wrap;
 	display:none;
@@ -63,4 +67,23 @@ a{
     max-width: 40%;
     margin-left:20%;
 	
+}
+
+@media screen and (max-width: 450px) {
+	#content{
+		display: block;
+		margin: auto;
+	}
+	#pic{
+		margin: 5% 10% 0 10%;
+		width: 80%;
+	}
+	#intro{
+		width: 90%;
+		margin: 3% 5% 0% 5%;
+	}
+	#bottons>button{
+		font-size: 16px;
+	}
+
 }

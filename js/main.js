@@ -66,3 +66,5 @@ var x = 0
 // });
 
 $(".outward").attr("target","_blank");
+
+$("#store-info p a").attr("target","_blank");

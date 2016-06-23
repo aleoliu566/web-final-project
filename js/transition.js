@@ -19,7 +19,7 @@ function animate(){
     if (window_w > 450) {
         
         $(window).scroll(function() {
-            if ($(window).scrollTop() > (h/2)) {
+            if ($(window).scrollTop() > (h/3)) {
                 $('#firstImg').animate({ left: "+5%", opacity: 1 }, 2000);
             }
             if ($(window).scrollTop() > (topPicture + h / 3)) {
@@ -45,16 +45,16 @@ function animate(){
 }
 
 if (window_w < 450) {
-    $("#firstImg div h5").before($("#firstImg div a img"));
-    $("#flower div h5").before($("#flower div a img"));
-    $("#breadcream div h5").before($("#breadcream div a img"));
-    $("#chickenegg div h5").before($("#chickenegg div a img"));
-    $("#pigblood div h5").before($("#pigblood div a img"));
-    $("#myyasu div h5").before($("#myyasu div a img"));
+    $("#firstImg div h5").before($("#firstImg div a"));
+    $("#flower div h5").before($("#flower div a"));
+    $("#breadcream div h5").before($("#breadcream div a"));
+    $("#chickenegg div h5").before($("#chickenegg div a"));
+    $("#pigblood div h5").before($("#pigblood div a"));
+    $("#myyasu div h5").before($("#myyasu div a"));
 
-    $("#milktea div h5").before($("#milktea div a img"));
-    $("#flowertea div h5").before($("#flowertea div a img"));
-    $("#ice div h5").before($("#ice div a img"));
+    $("#milktea div h5").before($("#milktea div a"));
+    $("#flowertea div h5").before($("#flowertea div a"));
+    $("#ice div h5").before($("#ice div a"));
 
     $("#logo img").attr('src', 'img/logo_nav_small.png');
 }
