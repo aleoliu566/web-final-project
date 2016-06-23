@@ -172,6 +172,9 @@ a{
 	color: rgb(86,86,86);
 	font-size: 16px;
 }
+#related>div:hover{
+	background-color: rgba(255,255,255,0.1);
+}
 .outward>a>p:hover{
 	text-decoration: none;
 }
