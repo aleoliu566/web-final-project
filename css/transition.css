@@ -10,35 +10,37 @@ a{
 	z-index: 5;
 }
 .active{
-	border:1px solid black;
+	border:1px solid rgb(86,86,86);
 }
 #bar{
 	display: flex;
-	/*width: 100%;*/
-	background-color: rgb(93,93,93);
+	background-color: rgb(37,37,38);
+	/*background-color: rgb(93,93,93);*/
 	padding-top: 1.5%;
 	padding-bottom: 1.5%;
 }
-#icon{
+#logo{
 	flex: 1;
 	padding-left:10%; 
 	width: 60%;
 }
-#icon>img{
-	width: 32px;
+#logo>img{
+	height: 32px;
 }
 #paging{ 
-	flex: 4;
+	flex: 5;
 	text-align: right;
 	list-style-type:none; 
-	margin-right: 3%;
+	margin-right: 10%;
 	margin-bottom: 0;
 }
 #paging>li{
 	display: inline-block;
-	margin-left:5%; 
+	margin-left:5%;
+	/*background-color: rgb(37,37,38)*/
 }
 #paging>li>a{
+
 	color: black;
 	width: 100%;
 }
@@ -108,6 +110,7 @@ a{
 #main-part img{
 	/*padding: 5%;*/
 	width: 70%;
+	height: 70%;
 }
 #main-part>ul>li:nth-child(odd){
 	margin-left: -10%;
@@ -115,11 +118,11 @@ a{
 #main-part>ul>li:nth-child(even){
 	margin-right: -10%;
 }
-#main-part>ul>li:nth-child(odd)>div>a{
-	/*border-right: 1px solid black;*/
+#main-part>ul>li:nth-child(odd)>div>h5{
+	text-align: left;
 }
-#main-part>ul>li:nth-child(even)>div>a{
-	/*border-left: 1px solid black;*/
+#main-part>ul>li:nth-child(even)>div>h5{
+	text-align: right;
 }
 #main-part>ul{
 	padding: 0px;
@@ -163,14 +166,26 @@ a{
 	color: rgb(86,86,86);
 	font-size: 16px;
 }
+.outward>a>p:hover{
+
+	text-decoration: none;
+}
 
 /***********************************************************/
 /************************          *************************/
 /************************  footer  *************************/
 /************************          *************************/
 /***********************************************************/
-
+footer{
+	background-color: rgb(37,37,38);
+	color: rgb(86,86,86);
+	text-align: center;
+	padding-bottom: 2%;
+}
 footer h3{
 	padding: 3%;
+	margin: 0;
+}
+footer p{
 	margin: 0;
 }

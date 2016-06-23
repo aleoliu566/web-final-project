@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/main1.css"> -->
     <link rel="stylesheet" type="text/css" href="css/transition.css">
     <link rel="stylesheet" type="text/css" href="css/transition_media.css">
 </head>
@@ -21,29 +21,33 @@
             <path d="M 100 75 L 100 230" stroke-width="3" stroke="white" fill="white">
         </svg> -->
     </div>
-
     <header id="header">
         <div id="bar">
-            <a id="icon">
-                <img src="img/smallIcon.png" alt="icon喔">
+            <a id="logo" href="index.html">
+                <img src="img/logo_nav.png" alt="icon喔">
             </a>
-                <ul id="paging">
-                    <li><a href="index.html"><img src="img/barIcon/home.png"></a></li>
-                    <li class="active"><a href="transition_food.html"><img src="img/barIcon/food.png"></a></li>
-                    <li><a href="transition_drink.html"><img src="img/barIcon/drink.png"></a></li>
-                    <li><a href="transition_map.html"><img src="img/barIcon/map.png"></a></li>
-                </ul>
+            <ul id="paging">
+                <li>
+                    <a href="index.html"><img src="img/barIcon/home.png"></a>
+                </li>
+                <li class="active">
+                    <a href="transition_food.html"><img src="img/barIcon/food.png"></a>
+                </li>
+                <li>
+                    <a href="transition_drink.html"><img src="img/barIcon/drink.png"></a>
+                </li>
+                <li>
+                    <a href="transition_map.html"><img src="img/barIcon/map.png"></a>
+                </li>
+            </ul>
         </div>
     </header>
-
-
-
     <h3 class="word">一間間的紅廊和巴洛克建築，</h3>
     <h3 class="word">濃濃的古早味，不禁讓人產生一股懷舊之情</h3>
     <div id="container">
         <div id="main-part">
             <ul>
-                <li id="firstImg">
+                <li class="item" id="firstImg">
                     <div>
                         <a href="bread.html">
                             <img src="img/tran-food/bread.png" alt="金牛角">
@@ -51,7 +55,7 @@
                         <h5>金牛角</h5>
                     </div>
                 </li>
-                <li id="flower">
+                <li class="item" id="flower">
                     <div>
                         <h5>豆花</h5>
                         <a>
@@ -85,32 +89,35 @@
                 </li>
                 <li id="myyasu">
                     <div>
-                    	<h5>麥芽酥</h5>
-                    	<a>
-                        	<img id="myyasu" src="img/tran-food/myyasu.png" alt="Card image cap">
+                        <h5>麥芽酥</h5>
+                        <a>
+                            <img id="myyasu" src="img/tran-food/myyasu.png" alt="Card image cap">
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
-
     <div id="related">
         <div>
-            <img src="img/re1.png" alt="三峽老街官網">
-            <p>三峽老街官網</p>
+            <a class="outward" href="http://www.sanchiaoyung.com.tw/"><img src="img/re1.png" alt="三峽老街官網">
+                <p>三峽老街<br>官方網站</p>
+            </a>
         </div>
         <div class="none">
-            <img src="img/re4.png" alt="三峽老街粉絲專頁">
-            <p>三峽老街粉絲專頁</p>
+            <a class="outward" href="https://www.facebook.com/sanchiaoyung?ref=stream&hc_location=timeline&__mref=message_bubble"><img src="img/re4.png" alt="三峽老街粉絲專頁">
+                <p>三峽老街<br>粉絲專頁</p>
+            </a>
         </div>
         <div>
-            <img src="img/re2.png" alt="新北市觀光旅遊網">
-            <p>新北市觀光旅遊網</p>
+            <a class="outward" href="http://tour.ntpc.gov.tw/page.aspx?wtp=1&wnd=136&id=12471eb710c000005572"><img src="img/re2.png" alt="新北市觀光旅遊網">
+                <p>新北市<br>觀光旅遊網</p>
+            </a>
         </div>
         <div class="none">
-            <img src="img/re3.png" alt="三角湧文化協進會">
-            <p>三角湧文化協進會</p>
+            <a class="outward" href="http://www.sanchiaoyung.org.tw/front/bin/home.phtml"><img src="img/re3.png" alt="三角湧文化協進會">
+                <p>三角湧<br>文化協進會</p>
+            </a>
         </div>
     </div>
     <footer id="footer">
@@ -118,6 +125,8 @@
         <p>&copy; 2016 戴鈺娟 蕭卉汝 陳敬淳 那玉昕 劉皪</p>
     </footer>
     <script src="jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="js/transition_food.js"></script>
+    <script type="text/javascript" src="js/transition.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

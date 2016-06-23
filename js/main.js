@@ -4,12 +4,12 @@ var window_w = $(window).width();
 var window_h = $(window).height();
 var x = 0
 
-$("#index").mouseover(function() {
-    $('#index').css('background-color', 'rgb(213,73,29)');
-});
-$("#index").mouseout(function() {
-    $('#index').css("background-color", "");
-});
+// $("#index").mouseover(function() {
+//     $('#index').css('background-color', 'rgb(213,73,29)');
+// });
+// $("#index").mouseout(function() {
+//     $('#index').css("background-color", "");
+// });
 
 // $(document).ready(function(){
     function countSecond() {　
@@ -64,3 +64,5 @@ $("#index").mouseout(function() {
     }
     countSecond();
 // });
+
+$(".outward").attr("target","_blank");

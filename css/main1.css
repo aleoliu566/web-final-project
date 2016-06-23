@@ -1,7 +1,16 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-color: black;
 	color: rgb(224,225,226);
 }
+a{
+	text-decoration: none;
+}
+
+
 #bg-picture{
 	display: flex;
 	height:750px;
@@ -30,33 +39,42 @@ body{
   	margin-right:-115px;
   	text-align: center;
 }
+.bgcolor{
+	/*border-color: rgb(213,73,29);*/
+	background-color: rgb(213,73,29);
+	border-radius: 10%;
+}
 #logo>img{
 	margin-top: 5%;
 	margin-bottom: 10%; 
 	padding: 5%;
 	width: 90%;
 }
+/***************三峽老街**********************/
+#main{
+	margin: 15%;
+}
+#main>h1{
+	padding-bottom: 25%;
+	margin: auto;
+	border-bottom: 1px white solid; 
+}
 #menu{
-	border-top: 1px white solid; 
 	-webkit-writing-mode: vertical-lr;
 	writing-mode: vertical-lr;
 	margin: auto;
 }
 #menu>div{
 	list-style-type:none;
-	padding-top: 50px;
-	padding-bottom: 10px;
-	border-color: rgb(213,73,29);
-	padding-right:10px;
-	padding-left:10px; 
-	/*width: 30px;*/
-	/*background-color: yellow;*/
-
+	margin-top: 30px;
+	padding: 10px 10px 10px 10px;
 }
 #menu>div>a{
 	text-decoration: none;
 	color: white;
 }
-#b{
-	display: none;
+#menu>div>a>img{
+	padding-top: 10px;
+	width:24px;
+	opacity: 0;
 }
