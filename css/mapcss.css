@@ -138,7 +138,6 @@ body{
 	text-align: left;
 	background-color: white
 }
-
 .traffic-icon img{
 	margin: 0 auto;
 	width: 100%;
@@ -152,6 +151,9 @@ body{
 #highspeed-icon{
 	background-color: rgb(114, 83, 56);
 	width: 20%;
+	display: flex;
+	align-items:center;
+	justify-content:center;
 }
 
 
